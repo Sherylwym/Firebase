@@ -23,7 +23,8 @@
     appId: "1:1011716306066:web:955556651d158a5228a24b",
     measurementId: "G-SZMPFY13RG"
   };
-
+firebase.database().ref(https://fir-a10be-default-rtdb.firebaseio.com);  // Specifies the database root
+firebase.database().ref("child/path") // Specifies a specific location in the database tree
 let myFlashcards = [ {
     "question": "Name this species of bird.",
     "image" : "images/barn-owl-2550068__340.webp",
