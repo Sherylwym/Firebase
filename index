@@ -40,6 +40,8 @@ let myFlashcards = [ {
     "answer": "Hummingbird"
     }
   ];
+let dbLocation = firebase.database().ref('deck/flashcards'); 
+dbLocation.set(myFlashcards);
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
