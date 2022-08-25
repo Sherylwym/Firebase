@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Firebase</title>
-  <script type="module">
+</head>
+<body>
+ <script type="module">
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
@@ -27,17 +29,14 @@ firebase.database().ref(https://fir-a10be-default-rtdb.firebaseio.com);  // Spec
 firebase.database().ref("child/path") // Specifies a specific location in the database tree
 let myFlashcards = [ {
     "question": "Name this species of bird.",
-    "image" : "images/barn-owl-2550068__340.webp",
     "answer": "Barn Owl"
     },
     {
     "question": "Name this species of bird.",
-    "image" : "images/dove-2516641__340.webp",
     "answer": "Dove"
     },
     {
     "question": "Name this species of bird.",
-    "image" : "images/hummingbird-2139279__340.webp",
     "answer": "Hummingbird"
     }
   ];
@@ -48,8 +47,5 @@ dbLocation.set(myFlashcards);
   const app = initializeApp(firebaseConfig);
   const analytics = getAnalytics(app);
 </script>
-</head>
-<body>
-***
 </body>
 </html>
